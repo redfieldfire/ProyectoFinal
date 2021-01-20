@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="595.0" prefWidth="375.0" styleClass="fondoRegistro" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerRegistro">
+   <children>
+      <Label layoutX="131.0" layoutY="63.0" text="Registro" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsuario" alignment="CENTER" layoutX="59.0" layoutY="154.0" onKeyReleased="#enter" prefHeight="27.0" prefWidth="258.0" promptText="Ingresa un usuario" styleClass="txtRegistro">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnRegistrar" layoutX="59.0" layoutY="515.0" mnemonicParsing="false" onAction="#registrar" onMouseEntered="#registrarDentro" onMouseExited="#registrarFuera" prefWidth="258.0" styleClass="btnRegistro" text="Registrar">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtContrasenia1" alignment="CENTER" layoutX="59.0" layoutY="395.0" onKeyReleased="#enter" prefHeight="27.0" prefWidth="258.0" promptText="Ingresa una constraseña" styleClass="txtRegistro">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContrasenia2" alignment="CENTER" layoutX="59.0" layoutY="445.0" onKeyReleased="#enter" prefHeight="27.0" prefWidth="258.0" promptText="Vuelve a ingresarla" styleClass="txtRegistro">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="volveralmain" fitHeight="30.0" fitWidth="38.0" layoutX="331.0" layoutY="14.0" onMouseClicked="#inicio" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@img/regreso.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#irALaLista" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/lista.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

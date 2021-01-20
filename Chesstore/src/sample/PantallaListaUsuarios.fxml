@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="375.0" spacing="10.0" styleClass="fondoListaUsuarios" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerListaUsuarios">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de usuarios">
+               <font>
+                  <Font name="Segoe UI Light" size="30.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="78.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icono.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="50.0" onMouseClicked="#volver1" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@img/regreso.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="45.0" top="-42.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <TableView fx:id="tabla" opacity="0.8" prefHeight="346.0" prefWidth="373.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ultimo usuario borrado">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fx:id="usuarioBorrado" strokeType="OUTSIDE" strokeWidth="0.0" text="Aqui estara el ultimo usuario">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Button fx:id="borrar" mnemonicParsing="false" onAction="#borrarUsuario" onMouseEntered="#entrarBorrar" onMouseExited="#salirBorrar" styleClass="btnListaUsuarios" text="Borrar usuario">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

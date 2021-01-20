@@ -1,0 +1,147 @@
+.fondoSample{
+
+        -fx-background-image: url("./img/chessfondo.jpg");
+        -fx-background-size: 100% 100%;
+        -fx-border-color: WHITE;
+
+}
+
+.txt{
+
+        -fx-border-radius: 30px;
+        -fx-border-color: WHITE;
+        -fx-background-color: #151925;
+        -fx-text-fill: WHITE;
+
+}
+
+.lbl{
+
+    -fx-border-color: WHITE;
+    -fx-border-radius: 30px;
+
+}
+
+.btn{
+
+    -fx-border-radius: 30px;
+    -fx-border-color: WHITE;
+    -fx-background-color: #151925;
+    -fx-background-radius: 30px;
+    -fx-text-fill: WHITE;
+
+}
+
+
+
+.fondoPersonalizar{
+
+        -fx-background-image: url("./img/fondoPersonalizar.jpg");
+        -fx-background-size: 100% 100%;
+        -fx-border-color: WHITE;
+
+}
+
+.btnPersonalizar{
+
+    -fx-border-radius: 30px;
+    -fx-border-color: WHITE;
+    -fx-background-color: #160E13;
+    -fx-background-radius: 30px;
+    -fx-text-fill: WHITE;
+
+}
+
+.cmbPersonalizar{
+
+    -fx-background-color: #70435E;
+    -fx-border-color: #160E13;
+    -fx-text-fill: WHITE;
+
+}
+
+.txtPersonalizar{
+
+        -fx-border-radius: 30px;
+        -fx-border-color: WHITE;
+        -fx-background-color: #160E13;
+        -fx-text-fill: WHITE;
+
+}
+
+
+
+.fondoDespacho{
+
+        -fx-background-image: url("./img/fondoDespacho.jpg");
+        -fx-background-size: 100% 100%;
+        -fx-border-color: WHITE;
+
+}
+
+.fondoRegistro{
+
+        -fx-background-image: url("./img/chessRegistro.jpg");
+        -fx-background-size: 100% 100%;
+        -fx-border-color: WHITE;
+
+}
+
+.txtRegistro{
+
+        -fx-background-color: #333365;
+        -fx-background-radius: 30px;
+        -fx-border-color: WHITE;
+        -fx-border-radius: 30px;
+        -fx-text-fill: WHITE;
+
+}
+
+.btnRegistro{
+
+        -fx-background-color: #333365;
+        -fx-background-radius: 30px;
+        -fx-border-radius: 30px;
+        -fx-border-color: WHITE;
+        -fx-text-fill: WHITE;
+}
+
+
+.fondoFabrica{
+
+        -fx-background-image: url("./img/fondoFabrica.jpg");
+        -fx-background-size: 100% 100%;
+        -fx-border-color: WHITE;
+
+}
+
+.btnFabrica{
+
+        -fx-background-color: BLACK;
+        -fx-border-color: WHITE;
+        -fx-text-fill: WHITE;
+        -fx-border-radius: 30px;
+        -fx-background-radius: 30px;
+
+}
+
+
+
+.fondoListaUsuarios{
+
+    -fx-background-image: url("./img/FondoListaUsuarios.jpeg");
+    -fx-background-size: 100% 100%;
+    -fx-border-color: BLACK;
+
+}
+
+.btnListaUsuarios{
+
+       -fx-background-color: #d0d0d0;
+       -fx-border-color: BLACK;
+       -fx-text-fill: BLACK;
+       -fx-border-radius: 30px;
+       -fx-background-radius: 30px;
+
+}
+

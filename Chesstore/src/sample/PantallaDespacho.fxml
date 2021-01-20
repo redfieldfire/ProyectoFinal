@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="500.0" prefWidth="800.0" styleClass="fondoDespacho" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerDespacho">
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Chesstore">
+               <font>
+                  <Font name="Segoe UI Light" size="35.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="21.0" />
+               </HBox.margin>
+            </Text>
+            <ImageView fitHeight="72.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icono.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="6.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <AnchorPane maxWidth="500.0" minWidth="365.0" />
+            <ImageView fitHeight="88.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/peon.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="3.0" top="6.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text fx:id="lblUsuario" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="-11.0" top="34.0" />
+               </HBox.margin>
+            </Text>
+            <ImageView fx:id="imgVolver" fitHeight="45.0" fitWidth="35.0" onMouseClicked="#volver" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@img/regreso.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="8.0" top="7.0" />
+               </HBox.margin>
+            </ImageView>
+         </children></HBox>
+   </top>
+   <center>
+      <TableView fx:id="tabla" opacity="0.8" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="factura" mnemonicParsing="false" onAction="#crearFactura" onMouseEntered="#entrarFactura" onMouseExited="#salirFactura" prefHeight="40.0" prefWidth="287.0" styleClass="btnRegistro" text="Crear factura y mandar a fabrica">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Text fx:id="lbltableros" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="#Tableros">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblcosto" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Costo">
+               <font>
+                  <Font name="Segoe UI Light" size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="fabrica" mnemonicParsing="false" onAction="#irFabrica" onMouseEntered="#entrarFabrica" onMouseExited="#salirFabrica" prefHeight="40.0" prefWidth="182.0" styleClass="btnRegistro" text="Fabrica">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></HBox>
+   </bottom>
+</BorderPane>
